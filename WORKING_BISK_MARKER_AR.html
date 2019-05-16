@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	
+<script src="/js/three.js"></script>	
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+	
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+	
+<body style='margin : 0px; overflow: hidden;'>
+	
+	   <a-scene embedded arjs='sourceType: webcam;'>
+   
+		   
+      <a-sphere  src="https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg" position="-1.8 0 0" radius=".4" color="#EF2D5E">
+		   
+		    <a-animation attribute="position" to="-1.8 0 -1.75" direction="alternate" dur="1000"
+      repeat="indefinite"></a-animation>
+		   
+		   </a-sphere>
+		   
+	 <a-sphere  src="https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg" position=".5 .5 .1" radius=".2"></a-sphere>
+		   
+      <a-cylinder src="https://images.pexels.com/photos/172289/pexels-photo-172289.jpeg" position=".5 .15 0" radius=".1" height="1.5" color="#FFC65D" rotation="-90 0 0">
+		   </a-cylinder>
+		   
+<a-entity obj-model="obj: url(assets/elefante.obj); mtl: url(assets/elefante.mtl)" position="0 .75 0" rotation="0 -90 -270" scale="0.15 0.15 0.15">
+		   
+		    <a-animation attribute="position" to=".5 .75 0" direction="alternate" dur="2000"
+      repeat="indefinite"></a-animation>
+		   
+		   </a-entity>
+   
+	<a-box src="https://cdn.shopify.com/s/files/1/0337/7469/products/grass-texture_1000x.jpeg?v=1525958335" position="0 .5 1" width="1"  height="1.5" rotation="90 0 90" repeat="1 1"></a-box>	
+		   
+		      
+	<a-plane src="https://i2.wp.com/www.mediamaya.net/wp-content/uploads/2017/08/Pemandangan-Sunset.jpg" rotation="-90 0 0" position="0 0 0" width="2.5" height="1.5"  repeat="1 1"></a-plane>	
+		
+	
+<a-marker-camera type='pattern' url='assets/data/BISKmarker_1.patt'></a-marker-camera>
+		
+	</a-scene>
+	
+	
+</body>
+</html>
